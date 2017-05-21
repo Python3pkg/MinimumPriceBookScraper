@@ -19,8 +19,8 @@ class SastoBookSpider(scrapy.Spider):
 		#extracts name of the book from the given url using xpath
 		book_price = response.xpath("//div[@class='book_sellers']/table/tr[2]/td/div[@class='price_after_discount']/text()").extract()[0].split()[0]
 		#extracts price of the book from the given url using xpath
-		print '\n\nBook Name : ', book_name
-		print 'Book Price : ', book_price, '\n\n'
+		print('\n\nBook Name : ', book_name)
+		print('Book Price : ', book_price, '\n\n')
 		f = open('sasto.txt', 'w')
 		f.write(book_price)
 		#opens a file sasto.txt and writing the extracted price in here

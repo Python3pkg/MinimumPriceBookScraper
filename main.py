@@ -17,7 +17,7 @@ class RunnerClass:
 
         self.mini = min(sasto_price, az_price)
         #calculates minimal price]
-        print '\n\nMinimum price is: ', self.mini 
+        print('\n\nMinimum price is: ', self.mini) 
 	
 	
 	

@@ -19,8 +19,8 @@ class AzBookSpider(scrapy.Spider):
 		#extracts name of the book using xpath
 		book_price = response.xpath("//div[@class='section']/div[@class='pro_detail']/strong/text()").extract()[0].split()[1]
 		#extracts price using xpath
-		print '\n\nBook Name : ', book_name
-		print 'Book Price : ', book_price, '\n\n'
+		print('\n\nBook Name : ', book_name)
+		print('Book Price : ', book_price, '\n\n')
 		f = open('az.txt', 'w')
 		f.write(book_price)
 		#opens a file az.txt and writing the extracted book_price in it
